@@ -173,7 +173,7 @@ class IrCompileTimeChecker(
         val owner = expression.symbol.owner
         val parent = owner.parent as IrSymbolOwner
         val isJavaPrimitiveStatic = owner.origin == IrDeclarationOrigin.IR_EXTERNAL_JAVA_DECLARATION_STUB && owner.isStatic &&
-                owner.parentAsClass.fqNameWhenAvailable.isJavaPrimitive()
+                owner.type.isPrimitiveType()
         return visitedStack.contains(parent) || isJavaPrimitiveStatic
     }
 
