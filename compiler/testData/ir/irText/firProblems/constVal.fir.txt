@@ -27,9 +27,7 @@ FILE fqName:<root> fileName:/constVal.kt
       PROPERTY name:RESULT visibility:private modality:FINAL [const,val]
         FIELD PROPERTY_BACKING_FIELD name:RESULT type:kotlin.String visibility:private [final]
           EXPRESSION_BODY
-            CALL 'public final fun plus (other: kotlin.Any?): kotlin.String [operator] declared in kotlin.String' type=kotlin.String origin=PLUS
-              $this: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:FIRST type:kotlin.String? visibility:public [final,static]' type=kotlin.String? origin=GET_PROPERTY
-              other: GET_FIELD 'FIELD IR_EXTERNAL_JAVA_DECLARATION_STUB name:SECOND type:kotlin.String? visibility:public [final,static]' type=kotlin.String? origin=GET_PROPERTY
+            CONST String type=kotlin.String value="OK"
         FUN DEFAULT_PROPERTY_ACCESSOR name:<get-RESULT> visibility:private modality:FINAL <> ($this:<root>.My.Companion) returnType:kotlin.String
           correspondingProperty: PROPERTY name:RESULT visibility:private modality:FINAL [const,val]
           $this: VALUE_PARAMETER name:<this> type:<root>.My.Companion
