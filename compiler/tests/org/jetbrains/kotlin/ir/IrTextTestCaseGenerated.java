@@ -1726,6 +1726,11 @@ public class IrTextTestCaseGenerated extends AbstractIrTextTestCase {
             runTest("compiler/testData/ir/irText/firProblems/ClashResolutionDescriptor.kt");
         }
 
+        @TestMetadata("constVal.kt")
+        public void testConstVal() throws Exception {
+            runTest("compiler/testData/ir/irText/firProblems/constVal.kt");
+        }
+
         @TestMetadata("DeepCopyIrTree.kt")
         public void testDeepCopyIrTree() throws Exception {
             runTest("compiler/testData/ir/irText/firProblems/DeepCopyIrTree.kt");
